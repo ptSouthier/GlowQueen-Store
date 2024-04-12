@@ -37,9 +37,7 @@ export async function GET(request: NextRequest) {
       );
     };
 
-    if (!jobLevelSearchValue) {
-      return NextResponse.json(jobs);
-    };
+    return NextResponse.json(jobs);
   } catch {
     return NextResponse.json(
       {
