@@ -38,7 +38,9 @@ export async function GET(request: NextRequest) {
     };
 
     return NextResponse.json(jobs);
-  } catch {
+  } catch (error) {
+    console.error('Internal Server Error: ', error);
+
     return NextResponse.json(
       {
         error: 'Internal Server Error',
