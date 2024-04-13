@@ -33,7 +33,9 @@ export async function GET(_request: NextRequest, context: { params: { id: string
     }
 
     return NextResponse.json(jobResult);
-  } catch {
+  } catch (error) {
+    console.error('Internal Server Error: ', error);
+
     return NextResponse.json(
       {
         error: 'Internal Server Error',
