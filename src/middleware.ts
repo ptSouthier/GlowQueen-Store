@@ -6,11 +6,11 @@ export function middleware(request: NextRequest) {
   if (secretApiKey !== process.env.SECRET_TOKEN) {
     return NextResponse.json(
       {
-        error: 'Forbidden',
-        message: 'Permission denied!'
+        error: 'Unauthorized',
+        message: 'API-key is invalid or missing!'
       },
       {
-        status: 403
+        status: 401
       }
     );
   };  
