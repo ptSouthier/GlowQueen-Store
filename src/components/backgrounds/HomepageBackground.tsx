@@ -1,0 +1,24 @@
+import Image from 'next/image';
+import logoBackground from '@/src/assets/images/homepage-logo-background.png';
+import womanPortrait from '@/src/assets/images/homepage-woman-portrait.png';
+ 
+export default function HomepageBackground() {
+  return (
+    <div className='flex flex-wrap justify-between bgContainer'>
+      <div className='bgWrap'>
+        <Image
+          alt="GlowQueen watermark background"
+          src={ logoBackground }
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+      </div>
+      <div className='womanPortraitWrap'>
+        <Image
+          alt="Woman with impeccable skin"
+          src={ womanPortrait }
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+    </div>
+  );
+};
