@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import stringHasOnlyNumbers from "@/src/utils/stringHasOnlyNumbers";
-import jobs from '@/public/data/jobs';
+import jobs from '@/src/data/jobs';
 
 export async function GET(_request: NextRequest, context: { params: { id: string } }) {
   try {
