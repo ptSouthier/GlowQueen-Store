@@ -73,6 +73,7 @@
   
   * Estrutura possui os valores estipulados no Figma porém o dimensionamento em tela foge do resultado esperado.
   * Falta do efeito blur no container de "Testimony"
+  * Refatoração no componente Testimonies para alterar a forma de inserção do texto, de modo a mitigar o alerta apontado pelo ESLint.
   
   ---
 
