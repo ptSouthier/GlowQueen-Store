@@ -25,6 +25,43 @@ body {
   z-index: -1;
 }
 
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 9.0625rem;
+  height: 13.75rem;
+}
+
+.serviceCard h2 {
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+  color: #264065;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard p {
+  color: #909090;
+}
+
+.testimony {
+  width: 25.3125rem;
+  height: 15.4375rem;
+  border-radius: 1rem;
+  text-wrap: nowrap;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  background-color: #FFFFFF80;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimony p {
+  color: #070D15;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
