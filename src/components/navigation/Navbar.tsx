@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="relative flex justify-between items-center w-full h-[7.5rem] inset-x-0 top-0 p-[1.875rem]">
-      <div className="basis-1/5 flex justify-center">
+    <nav className="relative flex justify-between items-center w-full h-[7.5rem] inset-x-0 top-0">
+      <div className="basis-1/5 flex ml-[10rem]">
         <GlowQueenMarkdown />
       </div>
       <ul className="flex basis-2/5 justify-center gap-[3.5rem] mr-28 leading-[27px] text-primary">
@@ -37,7 +37,7 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="basis-1/4 flex justify-between mr-16 text-primary">
+      <div className="basis-1/4 flex justify-between mr-[8rem] text-primary">
         <div className="flex gap-4">
           <button className="mr-3">
             <SearchIcon size="24" className="hover:text-white duration-200" />
