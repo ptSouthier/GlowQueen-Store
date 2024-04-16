@@ -20,7 +20,7 @@ export default function Testimonies() {
       <div className="testimony self-start">
         <QuotationMarks />
         <p>
-          For the past few years, I've had a hard
+          For the past few years, {"I've"} had a hard
           <br/>time finding the right place for skin
           <br/>care to deal with my complicated skin
           <br/>condition, thank God I found
