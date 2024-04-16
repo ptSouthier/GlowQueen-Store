@@ -5,7 +5,7 @@ import Mortar from "@/src/components/icons/Mortar";
 
 export default function ServicesCards() {
   return (
-    <section className="w-[40.1875rem] h-[17.75rem] top-[5.625rem] left-[10rem] relative bg-white flex gap-[4.5rem] p-8 justify-between">
+    <section className="w-[40.1875rem] h-[17.75rem] top-[5.625rem] left-[10rem] relative backdrop-blur-[0.5rem] bg-white/[.80] flex gap-[4.5rem] p-8 justify-between">
         <div className="serviceCard">
           <FaceMassage />
           <h2>15+</h2>
