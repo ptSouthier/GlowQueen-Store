@@ -3,7 +3,7 @@ import QuotationMarks from "@/src/components/icons/QuotationMarks";
 
 export default function Testimonies() {
   return (
-    <section className="w-[34.0625rem] h-[34.9375rem] top-[19.6875rem] right-[4.125rem] absolute flex flex-col justify-between">
+    <section className="h-[34rem] col-start-9 col-end-13 -mt-44 mr-20 flex flex-col justify-between">
       <div className="testimony self-end">
         <QuotationMarks />
         <p>
