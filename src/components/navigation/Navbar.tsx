@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="relative flex justify-between items-center w-full h-[7.5rem] inset-x-0 top-0">
-      <div className="basis-1/5 flex ml-[10rem]">
+    <nav className="col-start-2 col-end-13 flex items-center w-full mt-11">
+      <div className="basis-1/5 flex">
         <GlowQueenMarkdown />
       </div>
       <ul className="flex basis-2/5 justify-center gap-[3.5rem] mr-28 leading-[27px] text-primary">
@@ -37,8 +37,8 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="basis-1/4 flex justify-between mr-[8rem] text-primary">
-        <div className="flex gap-4">
+      <div className="basis-1/4 flex justify-between text-primary">
+        <div className="flex gap-4 ml-12">
           <button className="mr-3">
             <SearchIcon size="24" className="hover:text-white duration-200" />
           </button>
@@ -50,7 +50,7 @@ export default function Navbar() {
           <button className="hover:text-white hover:underline duration-200">
             Sign In
           </button>
-          <button className="bg-primary hover:bg-cyan-700 hover:py-4 hover:px-11 hover:-mr-1 duration-200 font-light text-white py-[0.9rem] px-10 rounded-full">
+          <button className="bg-primary hover:bg-cyan-700 hover:py-4 hover:px-11 duration-200 font-light text-white py-[0.9rem] px-10 rounded-full">
             Sign Up
           </button>
         </div>
