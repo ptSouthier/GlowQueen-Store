@@ -9,7 +9,7 @@ export default function HomepageBackground() {
         <Image
           alt="GlowQueen watermark background"
           src={ logoBackground }
-          />
+        />
       </div>
       <div className='womanPortraitWrap'>
         <Image
