@@ -6,16 +6,16 @@ import Testimonies from "@/src/components/infos/Testimonies";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="grid grid-cols-12 auto-rows-min">
       <HomepageBackground />
       <Navbar />
 
-      <div className="relative left-[10rem] top-[5rem] w-[50.5625rem] h-[24.25rem]">
-        <h1 className="text-[4rem] text-primary font-bold leading-[5rem] h-[10rem] mb-8">
+      <div className="col-start-2 col-end-7 mt-20">
+        <h1 className="text-[3rem] xl:text-[3.5rem] 2xl:text-[4.15rem] text-primary font-bold leading-[4.15rem] mb-5 xl:mb-6 2xl:mb-8">
           Bring back the beauty
           <br/>and glow of your skin
         </h1>
-        <span className="text-[1.5rem] text-tertiary leading-[2.5rem] h-[5rem]">
+        <span className="text-[1rem] xl:text-[1.25rem] 2xl:text-[1.5rem] text-tertiary leading-[2.15rem]">
         We provide you various treatments from head to toe using the
         <br/>best product, advanced technology, and affordable price
         </span>
