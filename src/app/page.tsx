@@ -20,10 +20,10 @@ export default function Home() {
         <br/>best product, advanced technology, and affordable price
         </span>
         <div className="mt-14 flex gap-8">
-          <button className="bg-primary hover:bg-cyan-700 duration-200 font-light text-white w-[11.25rem] h-[3.75rem] rounded-full">
+          <button className="text-sm xl:text-base bg-primary hover:bg-cyan-700 hover:scale-105 duration-200 font-light text-white w-36 xl:w-40 2xl:w-44 h-10 xl:h-[3.125rem] 2xl:h-[3.75rem] rounded-full">
             Book Now
           </button>
-          <button className="flex gap-4 items-center justify-center text-primary hover:font-bold duration-100 w-[15rem] h-[3.75rem] rounded-full">
+          <button className="text-sm xl:text-base flex gap-4 items-center justify-center text-primary hover:font-bold hover:scale-105 duration-100 w-40 xl:w-[12.5rem] 2xl:w-[15rem] h-10 xl:h-[3.125rem] 2xl:h-[3.75rem] rounded-full">
             <span className="bg-white rounded-full p-3 drop-shadow-lg">
               <Play />
             </span>
