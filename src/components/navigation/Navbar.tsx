@@ -10,30 +10,22 @@ export default function Navbar() {
       <div className="basis-1/4 xl:basis-1/5 flex">
         <GlowQueenMarkdown />
       </div>
-      <ul className="flex basis-2/4 xl:basis-2/5 text-sm xl:text-base place-content-center gap-[3.5rem] mr-20 xl:mr-24 2xl:mr-28 xl:leading-[1.4rem] 2xl:leading-[1.6875rem] text-primary">
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Facilities
-          </Link>
-        </li>
+      <ul className="flex basis-2/4 xl:basis-2/5 text-sm xl:text-base place-content-center gap-[3.5rem] mr-20 xl:mr-24 2xl:mr-28 text-primary">
+        {[
+          ['Home', '/#'],
+          ['About', '/#'],
+          ['Services', '/#'],
+          ['Facilities', '/#'],
+        ].map(([ title, url ], index) => (
+          <li key={`navbar-link-${index}`}>
+            <Link href={ url } className="hover:text-secondary duration-200">
+              { title }
+            </Link>
+          </li>
+        ))}
         <li>
           <Link href="#" className="hover:text-secondary duration-200 text-center flex">
-            More <ChevronDown className="mt-0.5 ml-0.5" />
+            More <ChevronDown className="pl-0.5" />
           </Link>
         </li>
       </ul>
