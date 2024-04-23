@@ -3,9 +3,9 @@ import QuotationMarks from "@/src/components/icons/QuotationMarks";
 
 export default function Testimonies() {
   return (
-    <section className="h-[34rem] col-start-9 col-end-13 -mt-44 mr-20 flex flex-col justify-between">
+    <section className="h-[28rem] xl:h-[31rem] 2xl:h-[34rem] col-start-9 col-end-13 -mt-32 xl:-mt-36 2xl:-mt-44 mr-20 flex flex-col justify-between">
       <div className="testimony self-end">
-        <QuotationMarks />
+        <QuotationMarks className="iconResponsiveScale" />
         <p>
           I have a regular schedule to take
           <br/>treatment from GlowQueen, they gave
@@ -18,7 +18,7 @@ export default function Testimonies() {
         </span>
       </div>
       <div className="testimony self-start">
-        <QuotationMarks />
+        <QuotationMarks className="iconResponsiveScale" />
         <p>
           For the past few years, {"I've"} had a hard
           <br/>time finding the right place for skin
