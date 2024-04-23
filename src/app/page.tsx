@@ -10,8 +10,8 @@ export default function Home() {
       <HomepageBackground />
       <Navbar />
 
-      <div className="col-start-2 col-end-7 mt-20">
-        <h1 className="text-[3rem] xl:text-[3.5rem] 2xl:text-[4.15rem] text-primary font-bold leading-[4.15rem] mb-5 xl:mb-6 2xl:mb-8">
+      <div className="col-start-2 col-end-7 mt-16 xl:mt-20">
+        <h1 className="text-[3rem] xl:text-[3.5rem] 2xl:text-[4.15rem] text-primary font-bold leading-[4rem] mb-5 xl:mb-6 2xl:mb-8">
           Bring back the beauty
           <br/>and glow of your skin
         </h1>
@@ -24,8 +24,8 @@ export default function Home() {
             Book Now
           </button>
           <button className="text-sm xl:text-base flex gap-4 items-center justify-center text-primary hover:font-bold hover:scale-105 duration-100 w-40 xl:w-[12.5rem] 2xl:w-[15rem] h-10 xl:h-[3.125rem] 2xl:h-[3.75rem] rounded-full">
-            <span className="bg-white rounded-full p-3 drop-shadow-lg">
-              <Play />
+            <span className="bg-white rounded-full p-2 xl:p-2.5 2xl:p-3 drop-shadow-lg">
+              <Play className="iconResponsiveScale" />
             </span>
             Watch Video
           </button>
