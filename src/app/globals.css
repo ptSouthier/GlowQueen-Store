@@ -29,37 +29,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 9.0625rem;
+  width: 9rem;
   height: 13.75rem;
 }
 
 .serviceCard h2 {
+  @apply text-2xl xl:text-3xl 2xl:text-4xl mt-3.5 xl:mt-4 2xl:mt-6 mb-2 xl:mb-3 2xl:mb-4;
   font-weight: 500;
-  font-size: 2.25rem;
   line-height: 3.375rem;
   color: #264065;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 .serviceCard p {
+  @apply text-sm xl:text-base;
   color: #909090;
 }
 
 .testimony {
-  width: 25.3125rem;
-  height: 15.4375rem;
+  @apply text-xs xl:text-sm 2xl:text-base w-[19.5rem] xl:w-[22.5rem] 2xl:w-[25rem] p-5 xl:p-6;
   border-radius: 1rem;
   text-wrap: nowrap;
-  padding: 1.5rem;
   gap: 0.5rem;
   background-color: #FFFFFF80;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(0.5rem);
 }
 
 .testimony p {
   color: #070D15;
+}
+
+.iconResponsiveScale {
+  @apply scale-90 xl:scale-95 2xl:scale-100;
 }
 
 @layer utilities {

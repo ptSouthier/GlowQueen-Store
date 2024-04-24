@@ -6,39 +6,31 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="relative flex justify-between items-center w-full h-[7.5rem] inset-x-0 top-0">
-      <div className="basis-1/5 flex ml-[10rem]">
+    <nav className="col-start-2 col-end-13 flex items-center w-full mt-11">
+      <div className="basis-1/4 xl:basis-1/5 flex">
         <GlowQueenMarkdown />
       </div>
-      <ul className="flex basis-2/5 justify-center gap-[3.5rem] mr-28 leading-[27px] text-primary">
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link href="#" className="hover:text-secondary duration-200">
-            Facilities
-          </Link>
-        </li>
+      <ul className="flex basis-2/4 xl:basis-2/5 text-sm xl:text-base place-content-center gap-[3.5rem] mr-20 xl:mr-24 2xl:mr-28 text-primary">
+        {[
+          ['Home', '/#'],
+          ['About', '/#'],
+          ['Services', '/#'],
+          ['Facilities', '/#'],
+        ].map(([ title, url ], index) => (
+          <li key={`navbar-link-${index}`}>
+            <Link href={ url } className="hover:text-secondary duration-200">
+              { title }
+            </Link>
+          </li>
+        ))}
         <li>
           <Link href="#" className="hover:text-secondary duration-200 text-center flex">
-            More <ChevronDown className="mt-0.5 ml-0.5" />
+            More <ChevronDown className="pl-0.5" />
           </Link>
         </li>
       </ul>
-      <div className="basis-1/4 flex justify-between mr-[8rem] text-primary">
-        <div className="flex gap-4">
+      <div className="basis-1/3 2xl:basis-1/4 text-sm xl:text-base flex justify-between text-primary">
+        <div className="flex gap-2 xl:gap-3 2xl:gap-4 ml-0 xl:ml-6 2xl:ml-12">
           <button className="mr-3">
             <SearchIcon size="24" className="hover:text-white duration-200" />
           </button>
@@ -46,11 +38,11 @@ export default function Navbar() {
             <ShoppingBag size="24" className="hover:text-white duration-200" />
           </button>
         </div>
-        <div className="flex gap-4 pr-10">
-          <button className="hover:text-white hover:underline duration-200">
+        <div className="flex gap-3 xl:gap-4 xl:mr-20 2xl:mr-0 pr-10">
+          <button className="hover:text-white hover:underline hover:scale-105 duration-200">
             Sign In
           </button>
-          <button className="bg-primary hover:bg-cyan-700 hover:py-4 hover:px-11 hover:-mr-1 duration-200 font-light text-white py-[0.9rem] px-10 rounded-full">
+          <button className="bg-primary hover:bg-cyan-700 hover:scale-105 duration-200 font-light text-white py-[0.9rem] px-10 rounded-full">
             Sign Up
           </button>
         </div>
